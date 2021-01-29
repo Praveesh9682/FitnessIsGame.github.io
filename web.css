@@ -1,0 +1,532 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+/* html{ */
+    /* font-size: 62.5%; */
+/* } */
+body{
+    background-color: seashell;
+    
+}
+@keyframes fitindia{
+    30%{
+        color: rgb(253, 65, 65);
+    }
+    60%{
+        color:rgb(91, 91, 243);
+    }
+    90%{
+        color:rgb(253, 243, 105);
+    }
+}
+/* this is header styling */
+.burger{
+    display: none;
+    color: white;
+    font-size: 1.5rem;
+    position: absolute;
+    right: 9px;
+    top: 4px;
+    margin: 0px 0px;
+  }
+  .burger:hover{
+      background-color: rgb(40, 40, 202);
+  }
+.photo{
+    margin-top: 10px;
+    width: 13rem;
+   height: 20rem;
+   border-radius: 73px;
+}
+#nav{
+    font-family: 'Baloo Bhai 2', cursive;
+    background-color: rgb(0 0 0);
+    font-size: large;
+    margin: 2px 2px;
+ display: flex;
+ flex-direction: row;
+width: auto;
+}
+ul{
+    
+    margin-top: 5px 5px;
+    display: flex; 
+}
+#nav li{
+    margin-top: 20px;
+    font-size: large;
+list-style:none;
+}
+a{
+    text-decoration: none;
+    padding: 4px;
+    color: white;
+    font-weight: bold;
+    border-radius: 18px;
+    padding: 8px;
+    margin: 10px;
+    font-size: 20px;
+    font-style: unset;
+}
+a:hover{
+    color:black;
+    background-color: white;
+  
+}
+
+/* This is mid section */
+@keyframes praveesh{
+    15%{
+       content:" Here, you can reduce your fat(%).";
+    }
+    30%{
+       content:  " Here, You can build your muscle.";
+    }
+    45%{
+       content: " Here, You can make a good diet plan.";
+    }
+    60%{
+        content: "Here, you can  do different type of exercises.";
+    }
+    75%{
+        content: "Here, You can check your BMR , BMI and fat %.";
+    }
+    90%{
+        content: "Here, You could get some biological knowledge.";
+    }
+}
+.mid{ 
+    font-family: 'Baloo Bhai 2', cursive;
+    background: center / cover no-repeat url("../static/exer.jpg");
+    width:100%;
+    height: 800px;
+    margin-top: -21px;
+    margin-bottom: -20px;
+    
+}
+span::before{
+    content: "Here, you can reduce your fat(%)."; 
+    /* padding-left: 10px;  */
+    display: flex;
+    justify-content: center;
+    margin-left: -117px;
+    animation: praveesh infinite 24s; 
+} 
+#content{
+    font-size: 34px;
+    width: 841px;
+    height: 48px;
+    margin-left: 272px;
+    margin-top: 140px;
+    position: fixed;
+    color: white;
+}
+.mid h1{
+    height: 140px;
+    display: flex;
+    justify-content: center;
+    font-size: 55px;
+    margin-top: 57px;
+    color: white;
+    padding-top: 15px;
+   
+    margin-left: 41px;
+    background-color: #020202;
+    border-radius: 36px;
+    width: 823px;
+}
+.mix{
+    margin: 21px;
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+}
+.foot{
+    height: 60px;
+    background-color: rgb(84 97 90);
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    align-items: center;
+    font-family: 'yeon sung';
+    /* font-family: 'Baloo Bhai 2', cursive; */
+}
+#nav img{
+  margin: 10px 13px;
+}
+ #nav img:hover{
+    width: 135px;
+    height: 57px;
+}
+.fit{
+    margin-left: 13px;
+    animation: fitindia infinite 9s; 
+}
+ 
+ /* CSS FOR CONTACT PAGE */
+ .form h2{
+     margin: 11px;
+ }
+ .form h1{
+    font-size: 52px;
+    margin-bottom: 41px;
+    padding-top: 42px;
+ }
+  
+  .fa-facebook:hover {
+      opacity: 0.7;
+  }
+  
+  .fa-facebook {
+    padding: 10px;
+    font-size: 67px;
+    width: 61px;
+    text-align: center;
+    margin: 7px 5px;
+    margin: 10px 8px;
+    background: #3B5998;
+    color: white;
+  }
+  .fa-instagram:hover {
+    opacity: 0.7;
+}
+  .fa-instagram {
+    padding: 10px;
+    font-size: 67px;
+    width: 61px;
+    margin: 7px 5px;
+    margin: 10px 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: black;
+    color: white;
+    border: 4px solid white;
+  }
+    
+.icon{
+   display: flex;
+   flex-direction: row;
+}
+ .container{
+    font-family: 'Baloo Bhai 2', cursive;
+    background: center / cover no-repeat url("../static/contact.jpg");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+ }
+ .form{
+     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+ #name{
+    padding: 5px;
+    margin: 9px 0px;
+    width: 346px;
+    border-radius: 17px;
+    font-family: 'Baloo Bhai 2', cursive;
+    border: 2px solid black;
+}
+ 
+ .message{
+    border: 2px solid black;
+    padding: 5px;
+    margin: 9px 0px;
+    width: 346px;
+    height: 125px;
+    border-radius: 12px;
+    font-family: 'Baloo Bhai 2', cursive;
+ }
+ .icon h2{
+    color: #ffffff;
+        font-size: 30px;
+    margin: 20px;
+     display: flex;
+     justify-content: center;
+ }
+ .heading{
+     display: flex;
+     padding-left: 63px;
+     font-weight: bold;
+     font-family:initial;
+     font-size: 32px;
+     padding-bottom: 4px;
+ }
+ .btn{
+    padding: 5px;
+    color: white;
+    background-color:black;
+    border-radius: 12px;
+    font-size: 20px;
+    border: 2px solid white;
+    font-family: 'Baloo Bhai 2', cursive;
+ }
+ .btn:hover{
+    cursor: pointer;
+     background-color:white;
+     color: black;
+     border: 2px solid black;
+    
+ }
+
+ /* THIS IS DIET PLAN CSS */
+ .diet{
+     display: flex;
+     justify-content: center;
+    font-family: 'Baloo Bhai 2', cursive;
+    /* width:100%; */
+    background: center / cover no-repeat url("../static/dietback.jpg");
+ }
+ .diet table{
+    padding-top: 10px;
+    font-weight: bold;
+    border: 0px;
+ }
+ .diet h1{
+     padding-top: 5px;
+    color: blue;
+    display: flex;
+    justify-content: center;
+ }
+ #title{
+   
+     color:blue;
+     font-size: 22px;
+ }
+.tab {
+    display: flex;
+    justify-content: center;
+    flex-direction:column ;
+    width:70%;
+    border: 2px solid black;
+    border-radius: 60px;
+    background-color: #ff9c9c;
+    padding: 20px;
+    margin: 70px 0px;
+ }
+
+ /* css for bmri page */
+.gender{
+    display: flex;
+    font-size: 22px;
+    margin-left: -1px;
+}
+#gender1{
+    margin: 14px;
+}
+#gender2{
+    margin: 14px;
+}
+ .bmri{
+     width: 100%;
+     background: center / cover no-repeat url("../static/bmri.png");
+     display: flex;
+    padding-top: 29px;
+    padding-bottom: 45px;
+    font-family: 'Baloo Bhai 2', cursive;
+ }
+ .bmi{
+    width: 398px;
+ border: 2px solid black;
+ border-radius: 60px;
+ background-color: #ecf56c;
+ padding: 20px;
+ margin: 8px 15px;
+ }
+ .ctn{
+    display: flex;
+    justify-content: center;
+ }
+ .bmib{
+    display: inline-flex;
+    border-radius: 9px;
+    font-size: 20px;
+    margin: 5px;
+    border: 2px solid white;
+    background-color: black;
+    color: white;
+    padding: 3px;
+    margin-left: 84px;
+ }
+ .bmic{
+    display: inline-flex;
+    border-radius: 9px;
+    font-size: 20px;
+    margin: 5px;
+    border: 2px solid white;
+    background-color: #f51818;
+    margin-left: 2px;
+    color: white;
+    padding: 3px;
+}
+ .bmr{
+    width: 398px;
+    border: 2px solid black;
+    border-radius: 60px;
+    /* height: 570px; */
+    background-color: #ecf56c;
+    padding: 20px;
+    margin: 8px 15px;
+}
+.fat{
+    width: 398px;
+        border: 2px solid black;
+    border-radius: 60px;
+    /* height: 570px; */
+    background-color: #ecf56c;
+    padding: 20px;
+    margin: 8px 15px;
+}
+.description{
+    padding: 10px;
+    margin: 10px;
+}
+.description thead {
+    font-weight: bolder;
+}
+.tabf{
+    font-size: 22px;
+    margin-top: -6px;
+}
+#fa {display: block;
+    width: 187px;
+    height: 20px;
+}
+#fw {display: block;
+    width: 187px;
+    height: 20px;
+}
+#fbmi{
+    display: block;
+    width: 187px;
+height: 20px;
+}
+.first{
+   
+    display: flex;
+ flex-direction: column;
+ margin: 2px 35px;
+    margin-top: 14px;
+ 
+}
+.second{
+    display: flex;
+    flex-direction: column;
+    margin: 2px 35px;
+    margin-top: 14px;
+}
+.first input {
+    padding-top: 6px;
+    margin-top: 8px;
+}
+.second input {
+    padding-top: 6px;
+    margin-top: 8px;
+}
+
+/* css for exercises page */
+
+.exercise{ 
+    display: flex;
+align-items: center;
+flex-direction: column;
+font-family: 'Baloo Bhai 2', cursive;
+}
+ .cardio{
+    width: 90%;
+    background-color: #213322;
+    padding-left: 33px;
+    border: 2px solid black;
+border-radius: 36px;
+    margin: 20px;
+ }
+ .cardio h1{
+    color: white;
+    display: flex;
+    justify-content: center;
+ }
+ #photo{
+     display: inline-block;
+     
+     flex-direction: row;
+     margin: 2px;
+     width: 150px;
+     height: 200px;
+ }
+ #photo:hover{
+    width: 150px;
+    height: 200px;
+ }
+ .cardio ol li{
+    display: flex;
+    color: white;
+    margin: 30px;
+    font-size: 25px;
+    flex-direction: column;
+ }
+ .cardio ol{
+     display: flex;
+ }
+ .cardio ul{
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+ }
+ .cardio ul li{
+    color: white;
+    margin: 1px;
+        font-size: 29px;
+ }
+/* css for about us page */
+
+.about{
+    background: center / cover no-repeat url("../static/about.jpg");
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+ .about section{
+border: 2px solid black;
+width: 65%;
+border-radius: 36px;
+    margin: 20px;
+ }
+ .about section h1{
+     color: white;
+     display: flex;
+     justify-content: center;
+ }
+ .f{
+    background-color: #7463fb;
+    padding-left: 33px;
+    /* height: 50rem; */
+ }
+ .s{
+    padding-left: 33px;
+    /* height: 107rem; */
+     background-color: #7463fb;
+ }
+ .unorder{
+     display: flex;
+     flex-direction: column;
+     font-size: 26px;
+     margin-left: 25px;
+ }
+ .order{
+    display: flex;
+    flex-direction: column;
+    font-size: 26px;
+    margin-left: 25px;
+ }
+ .s ul{
+     display: flex;
+     flex-direction: column;
+     margin-left: 100px;
+ }

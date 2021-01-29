@@ -1,0 +1,119 @@
+extends index.pug
+block scripts
+  script
+    include fitness.js
+block style
+  style
+      include web.css
+      include responsive.css
+block content 
+  .bmri
+    .bmi
+      .first
+        h1 Check Your BMI
+        label Height(in cm)
+        input(type="text" id="h" placeholder="Enter Your Height(cm)") 
+        label Weight(in kg)
+        input(type="text" id="w" placeholder="Enter Your Weight(kg)") 
+      .ctn
+        button.bmib(type="button"  onclick="bmi()") Calculate
+        button.bmic(type="button"  onclick="cbmi()") Clear
+      h2
+      | BMI=
+      b#bmi_calc 
+      | kg/m2
+      h3#bmi_cal
+      h3 Tips:
+      ol
+        li BMI means Body Mass Index.
+        li It tells your body weight(in kg/m2).
+        li Normal BMI range is 18.5-24.9
+        li If your BMI is out of normal range then check your BMR and proceed accordingly.
+
+    .bmr
+      .second
+        h1 Check Your BMR
+        input(type="text" id="bh" placeholder="Enter Your Height(cm)")
+        input(type="text" id="bw" placeholder="Enter Your Weight(kg)")
+        input(type="text" id="a" placeholder="Enter Your Age")
+      .ctn
+        button.bmib(type="button"  onclick="bmr()") Calculate
+        button.bmic(type="button"  onclick="cbmr()") Clear
+          
+      h2
+      | BMR=
+      b#bmr_calc 
+      | calories.
+      b#bmr_cal
+      h3 Tips:
+      ol
+        li If you want to lose extra weight(fat),you have to cut 500 calories from daily calories.
+        li If you want to maintain your weight,you have to consume your daily calories.
+        li If you want to gain weight ,you have to add 500 calories in daily calories.
+        li 500 calories are natural calories to Gain/lose your weight. these calories increase/decrease 1 pound weight in a week.
+    .fat
+      h1 Check Your Body Fat %
+      .gender
+        |Gender   
+        input(type='radio' name='gender' id="gender1"  value="1")
+        label Male
+        input(type='radio' name='gender' id="gender2" value="2" )
+        label Female
+      table.tabf    
+        tr
+          td Age
+          td
+            input(type="text" id="fa"  placeholder="Enter Your Age")
+        tr
+          td BMI
+          td
+            input(type="text" id="fbmi"  placeholder="Enter Your BMI")
+        tr
+          td Weight(kg)
+          td  
+            input(type="text" id="fw"  placeholder="Enter Your Weight")    
+      .ctn
+        button.bmib(type="button"  onclick="fat()") Calculate
+        button.bmic(type="button"  onclick="cfat()") Clear
+      h2  
+      | FAT(%)=
+      b#fat_calc
+      b#fat_cal
+      br
+      | FAT(kg)=
+      b#fats_cal 
+      table.description(border='2')
+        h4 ACCEPTABLE BODY FAT PERCENTAGE(%)
+        thead
+          tr
+            td DISCREPTION
+            td MALE
+            td FEMALE
+        tr
+          td Essential Fat
+          td 2-4%
+          td 10-12%   
+        tr
+          td Athletes
+          td 6-13%
+          td 14-20%
+        tr
+          td Fitness
+          td 14-17%
+          td 21-24%
+        tr
+          td Acceptable
+          td 18-25%
+          td 25-30%
+        tr
+          td Obese
+          td 26%+
+          td 31%+    
+
+      
+      
+
+
+
+       
+        

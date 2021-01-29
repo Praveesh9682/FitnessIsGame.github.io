@@ -1,0 +1,17 @@
+extends index.pug
+block scripts
+  script
+    include fitness.js
+block style
+  style
+      include web.css
+      include responsive.css
+block content
+  section.mid
+    .mix
+      img.photo(src="../static/hero.png", alt="not")
+      h1 Welcome To 
+        b.fit FitnessIsGame
+      h3#content 
+        span
+      
